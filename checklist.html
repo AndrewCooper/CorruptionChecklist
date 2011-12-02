@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Metroid Prime 3 Checklist</title>
+        <link rel="stylesheet" type="text/css" href="../libChecklist/libChecklist.css" />
+        <script type="text/javascript" src="../libChecklist/libChecklist.js"></script>
+        <script type="text/javascript" src="tasks.js"></script>
+    </head>
+    <body>
+        <div id="nav_bar">
+            <a href="javascript:showTasks( TASKS['AC'] )">[All (Chronological)]</a>
+            <a href="javascript:showTasks( TASKS['ABT'] )">[All (By Type)]</a>
+            <a href="javascript:showTasks( TASKS['ME'] )">[Missiles]</a>
+            <a href="javascript:showTasks( TASKS['ET'] )">[Energy Tanks]</a>
+            <a href="javascript:showTasks( TASKS['EC'] )">[Energy Cells]</a>
+            <a href="javascript:showTasks( TASKS['GME'] )">[Gunship Missiles]</a>
+            <a href="javascript:showTasks( TASKS['SU'] )">[Suit Upgrades]</a>
+        </div>
+        <div id="main">
+            <div id="map">
+            </div>
+            <div id="tasks">
+            </div>
+        </div>
+        <script type="text/javascript">
+            applyLocalStorage()
+            showTasks( TASKS['AC'] )
+        </script>
+    </body>
+</html>
